@@ -14,9 +14,10 @@ class URLParse:
     #construtor da classe, recebe uma URL
     def __init__(self, url):
         parse = URLParse.parseURL(url)
-        self._host  = parse[0]
-        self._porta = parse[1]
-        self._urlRelativa  = parse[2]
+        self.__host  = parse[0]
+        self.__porta = parse[1]
+        self.__urlRelativa  = parse[2]
+        self.__parametros = parse[3]
 
     #-------------------------------------
     # METODOS GET E SET
@@ -24,29 +25,49 @@ class URLParse:
 
     #OBTER HOST DA URL
     def getHost(self):
-        return self._host
+        return self.__host
     
     #OBTER PORTA DA URL
     def getPorta(self):
-        return self._porta
+        return self.__porta
 
     #OBTER URL RELATIVA
     def getURLRelativa(self):
-        return self._urlRelativa
+        return self.__urlRelativa
+
+    #OBTER URL RELATIVA GET
+    def getURLRelativaGET(self):
+        if(self.__parametros == ''):
+            return self.__urlRelativa
+        else:
+            return self.__urlRelativa + '?' + self.__parametros
+
+    #OBTER URL PARAMETROS
+    def getParametrosURL(self):
+        return self.__parametros
 
     #OBTER URL COMPLETA
     def getURLCompleta(self):
-        return self._host + ':' + str(self._porta) + '/' + self._urlRelativa
+        return self.__host + ':' + str(self.__porta) + '/' + self._urlRelativa + '?' + self.__parametros
     
     #-------------------------------------
-    # METODOS GET E SET
+    # METODOS PARSER
     #-------------------------------------
+
+    def __parseParametrosPost(urlRelativa):
+    
+        if(StringHandle.strContem(urlRelativa,'?')):
+            i = urlRelativa.index('?')
+            return(urlRelativa[:i],urlRelativa[i+1:])
+
+        return(urlRelativa,'')
 
     #metodo da classe URLParse 
     def parseURL(url, portaPadrao = 80):
         host = ''
         porta = portaPadrao
         urlRelativa = ''
+        parametros = ''
 
         #verifica se inicia com http ou https
         #se sim, remove da url
@@ -54,18 +75,22 @@ class URLParse:
             url = url[7:]
         if(StringHandle.strIniciaCom(url,'https://')):
             url = url[8:]
+            porta = 443 #porta https
 
         host = url
         
         #verifica se contem url relativa
         if(StringHandle.strContem(url,'/')):
-           i = url.index('/')
-           host = url[:i]
-           urlRelativa = url[i+1:]
+            i = url.index('/')
+            host = url[:i]
+            urlRelativa = url[i+1:]
+			
+           	#verifica se url nao contem ponto no final, significando extensao (.html, .jsp)
+            if(not StringHandle.strContem(urlRelativa,'.')):
+                urlRelativa = urlRelativa + '/'
 
-           #verifica se url nao contem ponto no final, significando extensao (.html, .jsp)
-           if(not StringHandle.strContem(urlRelativa,'.')):
-               urlRelativa = urlRelativa + '/'
+			#trata os parametros caso existam
+            (urlRelativa, parametros) = URLParse.__parseParametrosPost(urlRelativa)
 
         #verifica se porta foi informada pelo usuario
         if(StringHandle.strContem(host,':')):
@@ -79,4 +104,13 @@ class URLParse:
                 raise URLException("Valor da porta deve ser um número")
             host = host[:i]
            
-        return (host,porta,urlRelativa)
+        return (host,porta,urlRelativa,parametros)
+
+#fim da classe
+"""
+url = URLParse('http://www.efacil.com.br/loja/ProductDisplay?storeId=10154&catalogId=10051&productId=45787&langId=-6&canal=ca_9784&redirectflag=true&canal=ca_9784&gclid=CP3rkfHaqMUCFYEjgQod9rIAjg')
+print(url.getHost())
+print(url.getPorta())
+print(url.getURLRelativa())
+print(url.getParametrosURL())
+"""
