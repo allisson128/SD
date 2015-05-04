@@ -1,0 +1,971 @@
+#1 - 2015-04-27 10:37:54.253338
+Server:: Criando socket...
+
+#2 - 2015-04-27 10:37:54.253802
+Server:: Ligando socket servidor pelo ip e porta...
+
+#3 - 2015-04-27 10:37:54.267858
+Server:: Aguardando requisicoes...
+
+#4 - 2015-04-27 10:38:11.309220
+Server:: Obteve conexao de 127.0.0.1
+
+
+#5 - 2015-04-27 10:38:11.467596
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/ HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#6 - 2015-04-27 10:38:11.469631
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 1728
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Developer Web Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="name-panel">
+      <h1 id="fst-heading"><span id="nome">Desenvolvedor</span> Pesonal <span id="nome">Page</span></h1>
+    </div>
+    
+
+    <nav>
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="cv.html">Curriculo</a></li>
+      	<li><a href="#">Projetos</a></li>
+      	<li><a href="#">Diario de Computacao</a></li>
+      	<li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="titulo">
+	<h1> Perfil </h1>
+	<p>Desenvolvedor de Sistemas Computacionais</p>
+      </div>
+      <hr>      
+
+      <div class="sobre">
+	<h1>Ola,</h1>
+	<p> Sou desenvolvedor de sistemas e meu proposito eh criar ferramentas que facam realmente a diferenca na vida dos usuarios.</p>
+	<p>Estou no ultimo ano do Bacharelado em Ciencia da Computacao pela Universidade Federal de Uberlandia, onde conheci as diversas faces da Computacao.</p>  
+	  <p> Mas minha experiencia com programacao comecou na minha adolescencia, quando fui desafiado por um amigo a fazer um bitmap se mover, usando a linguagem Oriel. Aquele desafio foi a inspiracao que me trouxe ateh aqui.</p>
+      </div>
+      <div class="container" align="center">
+	<img src="imagens/me-deal.jpg"></img>
+      </div>
+      <div class="detalhes">
+      	<h2>Detalhes</h2>
+	<h3>Nick Name:</h3>
+      	<h3>Idade:</h2>
+      	<h3>Local:</h2>
+
+      </div>
+
+    </section>
+    
+    <footer>
+
+    </footer>
+  </body>
+
+</html>
+
+
+
+#7 - 2015-04-27 10:38:11.619976
+Server:: Obteve conexao de 127.0.0.1
+
+
+#8 - 2015-04-27 10:38:11.631429
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/css/estilo.css HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Referer: http://localhost:8000/allisson/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#9 - 2015-04-27 10:38:11.633130
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 3086
+Content-Type: text/html; charset=UTF-8
+
+
+body{
+    /* border: dashed 1px black; */
+    margin: 0px 0px 0px 0px;
+    font-family:arial;
+}
+
+#name-panel {
+    width:100%;
+    height:6em;
+    color:white;
+    background-color:#003c36;
+    background: -webkit-linear-gradient(red, blue); 
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, blue); 
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, blue); 
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#33add6, black); 
+    /* Standard syntax (must be last) */
+}
+#nome {
+    /* color:#20b2aa; */
+    color:#20fa48;
+    /* color:#eed8ae; */
+    /* font-size:2em; */
+
+}
+#fst-heading{
+    display:inline-block;
+
+    /* font-family:Tahoma, Geneva, sans-serif; */
+    font-family: 'Droid Sans', arial, serif;
+    margin: 20px 0px 0px 40px;
+}
+#snd-heading{
+    display:inline-block;    
+    color:#cccc00;
+    font-size:1.2em;
+    /* border: black 1px solid; */
+    font-family: 'Droid Sans', arial, serif;
+    /* font-family:Georgia, serif; */
+    margin: 0px 0px 0px 300px;
+}
+
+nav {
+    /* background-color: #FFFFFF; */
+
+    /* background: linear-gradient(to  right, #c0c0c0 , #00cdcd); /\* Standard syntax (must be last) *\/ */
+    /* margin: 0px 10% 0px 10%; */
+    border-style: solid;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    width:100%;
+    text-align:center;
+    text-shadow: 3px 2px 15px #333333;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+
+    /* z-index:10; */
+}
+
+nav ul {
+    list-style-type: none;
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+nav li {
+    /* position:relative;/*  *\/ */
+    /* top:2em; */
+    /* left:0; */
+    display:inline;
+    /* padding:20px; */
+    /* height:3px; */
+    /* background-color: pink; */
+    /* margin: 0px 0px 0px 0px; */
+    /* float:left; */
+    /* border: 2px black solid; */
+    /* border-radius:20%; */
+}
+nav a{
+    text-decoration: none;
+    color: #0a274f;
+    padding: 8px 8px 8px 8px;
+}
+nav a:hover{
+    color: #ffffff;
+    background-color: #33add6;
+    border-radius: 8px;
+}
+
+section {
+    /* border:1px solid black; */
+    margin:0px 10% 0px 10%;
+    width:80%;
+
+}
+
+section#cv {
+    margin: 0px;
+    width:100%;
+}
+
+.titulo {
+    text-align:center;
+    /* border:1px solid black; */
+
+}
+
+.container {
+    /* border:1px solid pink; */
+position:relative;
+    top:2em;
+    height:auto;
+    width:30%;
+    display:inline-block;
+
+}
+
+img {
+    /* border:1px solid black; */
+    /* position:relative; */
+    /* left:3em; */
+    /* height:240px; */
+    /* width:240px; */
+    height:70%;
+    width:70%;
+
+    border-radius:100%;
+
+}
+.sobre {
+    /* position:absolute; */
+    /* top:0em; */
+    /* left:0em; */
+    /* float:left; */
+    float:left;
+    height:auto;
+    width:33%;
+    /* border:1px solid black; */
+    display:inline-block;
+}
+
+.detalhes {
+    /* position:relative; */
+    /* top:-2em; */
+    /* left:5em; */
+    float:right;
+    height:auto;
+    /* width:15em; */
+    width:33%;
+    /* border:1px solid black; */
+    display:inline-block;
+}
+
+footer {
+    clear:both;
+}
+
+
+#10 - 2015-04-27 10:38:11.634949
+Server:: Obteve conexao de 127.0.0.1
+
+
+#11 - 2015-04-27 10:38:11.640550
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/imagens/me-deal.jpg HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Referer: http://localhost:8000/allisson/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#12 - 2015-04-27 10:38:11.643095
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 404 Not Found
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 307
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ERRO 404</title>
+<style>
+	div#conteudo {
+		background-color: #ccc;
+		margin: 0px auto;
+		width:860px;
+		padding:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="conteudo">
+		<h1>Erro no servidor 404</h1>
+		<h2>Pagina requisitada nao foi encontrada</h2>
+	</div>
+</body>
+</html>
+
+
+#13 - 2015-04-27 10:38:29.746760
+Server:: Obteve conexao de 127.0.0.1
+
+
+#14 - 2015-04-27 10:38:29.756461
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/index.html HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#15 - 2015-04-27 10:38:29.757459
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 1728
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Developer Web Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="name-panel">
+      <h1 id="fst-heading"><span id="nome">Desenvolvedor</span> Pesonal <span id="nome">Page</span></h1>
+    </div>
+    
+
+    <nav>
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="cv.html">Curriculo</a></li>
+      	<li><a href="#">Projetos</a></li>
+      	<li><a href="#">Diario de Computacao</a></li>
+      	<li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="titulo">
+	<h1> Perfil </h1>
+	<p>Desenvolvedor de Sistemas Computacionais</p>
+      </div>
+      <hr>      
+
+      <div class="sobre">
+	<h1>Ola,</h1>
+	<p> Sou desenvolvedor de sistemas e meu proposito eh criar ferramentas que facam realmente a diferenca na vida dos usuarios.</p>
+	<p>Estou no ultimo ano do Bacharelado em Ciencia da Computacao pela Universidade Federal de Uberlandia, onde conheci as diversas faces da Computacao.</p>  
+	  <p> Mas minha experiencia com programacao comecou na minha adolescencia, quando fui desafiado por um amigo a fazer um bitmap se mover, usando a linguagem Oriel. Aquele desafio foi a inspiracao que me trouxe ateh aqui.</p>
+      </div>
+      <div class="container" align="center">
+	<img src="imagens/me-deal.jpg"></img>
+      </div>
+      <div class="detalhes">
+      	<h2>Detalhes</h2>
+	<h3>Nick Name:</h3>
+      	<h3>Idade:</h2>
+      	<h3>Local:</h2>
+
+      </div>
+
+    </section>
+    
+    <footer>
+
+    </footer>
+  </body>
+
+</html>
+
+
+
+#16 - 2015-04-27 10:38:29.758606
+Server:: Obteve conexao de 127.0.0.1
+
+
+#17 - 2015-04-27 10:38:29.849550
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/css/estilo.css HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Referer: http://localhost:8000/allisson/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#18 - 2015-04-27 10:38:29.850890
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 3086
+Content-Type: text/html; charset=UTF-8
+
+
+body{
+    /* border: dashed 1px black; */
+    margin: 0px 0px 0px 0px;
+    font-family:arial;
+}
+
+#name-panel {
+    width:100%;
+    height:6em;
+    color:white;
+    background-color:#003c36;
+    background: -webkit-linear-gradient(red, blue); 
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, blue); 
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, blue); 
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#33add6, black); 
+    /* Standard syntax (must be last) */
+}
+#nome {
+    /* color:#20b2aa; */
+    color:#20fa48;
+    /* color:#eed8ae; */
+    /* font-size:2em; */
+
+}
+#fst-heading{
+    display:inline-block;
+
+    /* font-family:Tahoma, Geneva, sans-serif; */
+    font-family: 'Droid Sans', arial, serif;
+    margin: 20px 0px 0px 40px;
+}
+#snd-heading{
+    display:inline-block;    
+    color:#cccc00;
+    font-size:1.2em;
+    /* border: black 1px solid; */
+    font-family: 'Droid Sans', arial, serif;
+    /* font-family:Georgia, serif; */
+    margin: 0px 0px 0px 300px;
+}
+
+nav {
+    /* background-color: #FFFFFF; */
+
+    /* background: linear-gradient(to  right, #c0c0c0 , #00cdcd); /\* Standard syntax (must be last) *\/ */
+    /* margin: 0px 10% 0px 10%; */
+    border-style: solid;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    width:100%;
+    text-align:center;
+    text-shadow: 3px 2px 15px #333333;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+
+    /* z-index:10; */
+}
+
+nav ul {
+    list-style-type: none;
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+nav li {
+    /* position:relative;/*  *\/ */
+    /* top:2em; */
+    /* left:0; */
+    display:inline;
+    /* padding:20px; */
+    /* height:3px; */
+    /* background-color: pink; */
+    /* margin: 0px 0px 0px 0px; */
+    /* float:left; */
+    /* border: 2px black solid; */
+    /* border-radius:20%; */
+}
+nav a{
+    text-decoration: none;
+    color: #0a274f;
+    padding: 8px 8px 8px 8px;
+}
+nav a:hover{
+    color: #ffffff;
+    background-color: #33add6;
+    border-radius: 8px;
+}
+
+section {
+    /* border:1px solid black; */
+    margin:0px 10% 0px 10%;
+    width:80%;
+
+}
+
+section#cv {
+    margin: 0px;
+    width:100%;
+}
+
+.titulo {
+    text-align:center;
+    /* border:1px solid black; */
+
+}
+
+.container {
+    /* border:1px solid pink; */
+position:relative;
+    top:2em;
+    height:auto;
+    width:30%;
+    display:inline-block;
+
+}
+
+img {
+    /* border:1px solid black; */
+    /* position:relative; */
+    /* left:3em; */
+    /* height:240px; */
+    /* width:240px; */
+    height:70%;
+    width:70%;
+
+    border-radius:100%;
+
+}
+.sobre {
+    /* position:absolute; */
+    /* top:0em; */
+    /* left:0em; */
+    /* float:left; */
+    float:left;
+    height:auto;
+    width:33%;
+    /* border:1px solid black; */
+    display:inline-block;
+}
+
+.detalhes {
+    /* position:relative; */
+    /* top:-2em; */
+    /* left:5em; */
+    float:right;
+    height:auto;
+    /* width:15em; */
+    width:33%;
+    /* border:1px solid black; */
+    display:inline-block;
+}
+
+footer {
+    clear:both;
+}
+
+
+#19 - 2015-04-27 10:38:29.852991
+Server:: Obteve conexao de 127.0.0.1
+
+
+#20 - 2015-04-27 10:38:29.853651
+Server:: Obteve mensagem de 127.0.0.1
+GET /allisson/imagens/me-deal.jpg HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Referer: http://localhost:8000/allisson/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#21 - 2015-04-27 10:38:29.854541
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 404 Not Found
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 307
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ERRO 404</title>
+<style>
+	div#conteudo {
+		background-color: #ccc;
+		margin: 0px auto;
+		width:860px;
+		padding:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="conteudo">
+		<h1>Erro no servidor 404</h1>
+		<h2>Pagina requisitada nao foi encontrada</h2>
+	</div>
+</body>
+</html>
+
+
+#22 - 2015-04-27 10:38:41.738306
+Server:: Obteve conexao de 127.0.0.1
+
+
+#23 - 2015-04-27 10:38:41.756794
+Server:: Obteve mensagem de 127.0.0.1
+GET / HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#24 - 2015-04-27 10:38:41.757727
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+Date: Mon, 27 Apr 2015 13:37:54 GMT
+Content-Length: 2260
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina inicial do servidor</title>
+	<!--link href="style.css" rel="stylesheet" type="text/css" /-->
+	<meta charset="utf-8" />
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		div#conteudo 
+		{
+			background-color: #ccc;
+			margin: 0px auto;
+			width:860px;
+			padding:10px;
+			border-radius: 10px;
+		}
+
+		nav
+		{
+			background-color:gray;
+			margin:-10px;
+		}
+
+		nav ul a li{
+			display:inline-block;
+			padding: 10px;
+			color:black;
+			text-decoration: none;
+		}
+
+		section#secao
+		{
+			background-color:gray;
+			border-radius:5px;
+		}
+
+		section#secao header
+		{
+			border-radius:5px;
+			text-align: center;
+		}
+
+		section#secao div
+		{
+			margin: 10px;
+		}
+
+		section#secao header h1
+		{
+			padding:10px;
+		}
+
+		article
+		{
+			margin:10px;
+			background-color:white;
+			border-radius:5px;
+			padding:10px;
+		}
+
+		article h2
+		{
+			text-align:center;
+		}
+
+
+		footer
+		{
+			clear: both;
+			background-color:gray;
+			border-radius:5px;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		//fim do css
+	</style>
+</head>
+<body>
+	<div id="conteudo">
+		<header>
+			<h1>Bem vindo ao SERVIDOR PARA PRATICA SD</h1>
+		</header>
+		<nav>
+			<ul>
+				<a href=""><li> Home 	</li></a>
+				<a href=""><li> PAGINAS </li></a>
+				<a href=""><li> Sobre	</li></a>
+			</ul>
+		</nav>
+		<section id="secao">
+			<header>
+				<h1>Esta e a pagina de entrada ao servidor</h1>
+			</header>
+			<article>
+				<h2>Lorem ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae eros eros. Pellentesque viverra dolor neque, vitae aliquet magna tempor eget. Curabitur eget turpis lectus. Pellentesque at risus sit amet magna vulputate feugiat. Praesent fringilla ante vitae massa aliquet, ac cursus lectus eleifend. Donec viverra ante sed nibh dictum, at viverra ipsum lacinia. Nunc fringilla, metus ac eleifend fringilla, odio nibh condimentum nulla, non semper felis nunc sed leo. Nulla finibus dignissim orci quis consequat. Morbi venenatis libero a arcu convallis semper. Sed vel dolor fringilla, sodales nisi nec, lacinia urna.</p>
+			</article>
+		</section>
+		
+		<footer>
+			<p>Copyright &copy; 2015
+		</footer>
+	</div>
+</body>
+</html>
+
+
+
+#25 - 2015-04-27 10:38:41.758735
+Server:: Obteve conexao de 127.0.0.1
+
+
+#26 - 2015-04-27 10:39:01.744566
+Server:: Obteve conexao de 127.0.0.1
+
+
+#1 - 2015-04-27 10:44:00.126461
+Server:: Criando socket...
+
+#2 - 2015-04-27 10:44:00.126962
+Server:: Ligando socket servidor pelo ip e porta...
+
+#3 - 2015-04-27 10:44:00.140811
+Server:: Aguardando requisicoes...
+
+#4 - 2015-04-27 10:44:17.914017
+Server:: Obteve conexao de 127.0.0.1
+
+
+#5 - 2015-04-27 10:44:17.916943
+Server:: Obteve mensagem de 127.0.0.1
+GET / HTTP/1.0
+
+Host: localhost:8000
+
+Connection: keep-alive
+
+
+#6 - 2015-04-27 10:44:17.918208
+Server:: Enviando mensagem para 127.0.0.1
+HTTP/1.0 200 OK
+
+Date: Mon, 27 Apr 2015 13:44:00 GMT
+
+Content-Length: 2260
+
+Content-Type: text/html; charset=UTF-8
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina inicial do servidor</title>
+	<!--link href="style.css" rel="stylesheet" type="text/css" /-->
+	<meta charset="utf-8" />
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		div#conteudo 
+		{
+			background-color: #ccc;
+			margin: 0px auto;
+			width:860px;
+			padding:10px;
+			border-radius: 10px;
+		}
+
+		nav
+		{
+			background-color:gray;
+			margin:-10px;
+		}
+
+		nav ul a li{
+			display:inline-block;
+			padding: 10px;
+			color:black;
+			text-decoration: none;
+		}
+
+		section#secao
+		{
+			background-color:gray;
+			border-radius:5px;
+		}
+
+		section#secao header
+		{
+			border-radius:5px;
+			text-align: center;
+		}
+
+		section#secao div
+		{
+			margin: 10px;
+		}
+
+		section#secao header h1
+		{
+			padding:10px;
+		}
+
+		article
+		{
+			margin:10px;
+			background-color:white;
+			border-radius:5px;
+			padding:10px;
+		}
+
+		article h2
+		{
+			text-align:center;
+		}
+
+
+		footer
+		{
+			clear: both;
+			background-color:gray;
+			border-radius:5px;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		//fim do css
+	</style>
+</head>
+<body>
+	<div id="conteudo">
+		<header>
+			<h1>Bem vindo ao SERVIDOR PARA PRATICA SD</h1>
+		</header>
+		<nav>
+			<ul>
+				<a href=""><li> Home 	</li></a>
+				<a href=""><li> PAGINAS </li></a>
+				<a href=""><li> Sobre	</li></a>
+			</ul>
+		</nav>
+		<section id="secao">
+			<header>
+				<h1>Esta e a pagina de entrada ao servidor</h1>
+			</header>
+			<article>
+				<h2>Lorem ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae eros eros. Pellentesque viverra dolor neque, vitae aliquet magna tempor eget. Curabitur eget turpis lectus. Pellentesque at risus sit amet magna vulputate feugiat. Praesent fringilla ante vitae massa aliquet, ac cursus lectus eleifend. Donec viverra ante sed nibh dictum, at viverra ipsum lacinia. Nunc fringilla, metus ac eleifend fringilla, odio nibh condimentum nulla, non semper felis nunc sed leo. Nulla finibus dignissim orci quis consequat. Morbi venenatis libero a arcu convallis semper. Sed vel dolor fringilla, sodales nisi nec, lacinia urna.</p>
+			</article>
+		</section>
+		
+		<footer>
+			<p>Copyright &copy; 2015
+		</footer>
+	</div>
+</body>
+</html>
+
+
+
+#7 - 2015-04-27 10:44:41.093474
+Server:: Obteve conexao de 127.0.0.1
+
+
+#8 - 2015-04-27 10:44:41.116722
+Server:: Obteve mensagem de 127.0.0.1
+GET / HTTP/1.1
+Host: localhost:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+
+
+
+
+#1 - 2015-04-27 10:44:41.117071
+Falha no parser do HOST
+

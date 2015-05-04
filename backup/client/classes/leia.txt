@@ -1,0 +1,38 @@
+Pratica1-SD
+Diretorio da pratica 1 de SD
+
+Neste diretorio acrescentarei das classes para toda a pratica um, incluindo o cliente e o servidor. Neste diretorio temos as Classes:
+
+URLParse: recebe pelo construtor uma string url e trata-se de um objeto contendo atributos para a porta, host e url relativa
+necessarios para o GET. Aqui encontra o metodo parseURL(url:string). Possui uma classe chamada URLException que é a excecao de 
+erro do parser. Erro no momento é lancado se a porta nao for um numero e se for no intervalo permitido
+
+StringHandler: Funcoes a mais para manipular strings, que sao uteis no URLParse
+
+HttpClientRequest: classe que contem o metodo GET e futuramente o POST
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Consideracoes do Python
+
+atributos do objetos definidos no metodo construtor, atraves do self.
+Se após o self tiver um '_', é um atributo privado.
+Todo metodo de instancia contem o parametro self. Sem este parametro o metodo é estatico
+
+
+ex:
+class Cao(Animal): #herda da classe animal
+    #construtor 
+    def __init__(self):
+        self.nome = 'cao' #publico
+        self._idade = 17  #privado
+    
+    def getIdade(self):
+        return self._idade
+    
+    #metodo de instancia
+    def late(self):
+        print("wolf")
+    
+    #metodo da classe (estatico)
+    def qntPatas():
+        return 4

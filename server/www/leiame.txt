@@ -1,0 +1,8 @@
+Pasta onde estará disponivel as paginas html
+esta ai um exemplo do lorem. Se fizerem localhost como servidor e porta 5000 podem digitar no google chrome ou outros
+
+http://localhost:5000/lorem/ (inserem esta barra final para funcionar)
+pelo nome do diretorio ele redireciona para o index.html contido na pasta www/lorem/
+ou podem fazer tambem
+
+http://localhost:5000/lorem/index.html

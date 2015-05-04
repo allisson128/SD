@@ -1,0 +1,342 @@
+#1 - 2015-04-27 10:42:18.622980
+Iniciando requisição GET para URL "www.google.com"...
+
+#2 - 2015-04-27 10:42:18.623383
+Parsing URL...
+
+#3 - 2015-04-27 10:42:18.623650
+Obtendo Host IP e numero da porta para conexao...
+
+#4 - 2015-04-27 10:42:18.642637
+	::IP para host "www.google.com" = 216.58.222.36!
+
+#5 - 2015-04-27 10:42:18.643021
+	::Porta da conexao = 80!
+
+#6 - 2015-04-27 10:42:18.643360
+Criando socket TCP...
+
+#7 - 2015-04-27 10:42:18.643881
+	::Socket criado com sucesso!
+
+#8 - 2015-04-27 10:42:18.644230
+Iniciando conexao...
+
+#9 - 2015-04-27 10:42:18.675567
+	::Conexao iniciada em IP "216.58.222.36" e Porta "80"!
+
+#10 - 2015-04-27 10:42:18.676073
+Montando mensagem GET...
+
+#11 - 2015-04-27 10:42:18.676631
+	::MENSAGEM GET
+****
+GET / HTTP/1.0
+
+Host: www.google.com:80
+
+Connection: keep-alive
+****
+
+#12 - 2015-04-27 10:42:18.676966
+Enviando mensagem via socket...
+
+#13 - 2015-04-27 10:42:18.677655
+	::Mensagem enviada com sucesso!
+
+#14 - 2015-04-27 10:42:18.678317
+Recebendo mensagem do servidor...
+
+#15 - 2015-04-27 10:42:18.708518
+	::Mensagem recebida com sucesso de Host "216.58.222.36" Porta "80"!
+
+#16 - 2015-04-27 10:42:18.708897
+	::MENSAGEM RECEBIDA
+
+****
+HTTP/1.0 302 Found
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+Location: http://www.google.com.br/?gfe_rd=cr&ei=ujw-Vf2yLYeq8wfAiYDIAg
+Content-Length: 262
+Date: Mon, 27 Apr 2015 13:42:18 GMT
+Server: GFE/2.0
+Alternate-Protocol: 80:quic,p=1
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com.br/?gfe_rd=cr&amp;ei=ujw-Vf2yLYeq8wfAiYDIAg">here</A>.
+</BODY></HTML>
+
+****
+
+#1 - 2015-04-27 10:42:39.630162
+Iniciando requisição GET para URL "www.facom.ufu.br/~nunes"...
+
+#2 - 2015-04-27 10:42:39.630784
+Parsing URL...
+
+#3 - 2015-04-27 10:42:39.631204
+Obtendo Host IP e numero da porta para conexao...
+
+#4 - 2015-04-27 10:42:39.648808
+	::IP para host "www.facom.ufu.br" = 200.131.206.1!
+
+#5 - 2015-04-27 10:42:39.649207
+	::Porta da conexao = 80!
+
+#6 - 2015-04-27 10:42:39.649626
+Criando socket TCP...
+
+#7 - 2015-04-27 10:42:39.650184
+	::Socket criado com sucesso!
+
+#8 - 2015-04-27 10:42:39.650547
+Iniciando conexao...
+
+#9 - 2015-04-27 10:42:39.653144
+	::Conexao iniciada em IP "200.131.206.1" e Porta "80"!
+
+#10 - 2015-04-27 10:42:39.653780
+Montando mensagem GET...
+
+#11 - 2015-04-27 10:42:39.654471
+	::MENSAGEM GET
+****
+GET /~nunes/ HTTP/1.0
+
+Host: www.facom.ufu.br:80
+
+Connection: keep-alive
+****
+
+#12 - 2015-04-27 10:42:39.654751
+Enviando mensagem via socket...
+
+#13 - 2015-04-27 10:42:39.655229
+	::Mensagem enviada com sucesso!
+
+#14 - 2015-04-27 10:42:39.655504
+Recebendo mensagem do servidor...
+
+#15 - 2015-04-27 10:42:39.666439
+	::Mensagem recebida com sucesso de Host "200.131.206.1" Porta "80"!
+
+#16 - 2015-04-27 10:42:39.666719
+	::MENSAGEM RECEBIDA
+
+****
+HTTP/1.1 200 OK
+Date: Mon, 27 Apr 2015 13:42:39 GMT
+Server: Apache/2.2.17 (Unix) mod_ssl/2.2.17 OpenSSL/0.9.8r DAV/2 PHP/5.3.6 SVN/1.6.16
+Content-Length: 1740
+Connection: close
+Content-Type: text/html;charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~nunes</title>
+ </head>
+ <body>
+<h1>Index of /~nunes</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/">Parent Directory</a>                             -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="Criptografia/">Criptografia/</a>           24-Apr-2015 10:11    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="WEBSITE/">WEBSITE/</a>                28-Nov-2006 14:42    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="analise%20de%20algoritmos/">analise de algoritmos/</a>  02-Apr-2012 11:38    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="logica/">logica/</a>                 22-Apr-2015 10:47    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="matematica%20para%20CC/">matematica para CC/</a>     25-Sep-2012 10:29    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="recuperacao%20de%20informacao/">recuperacao de infor..&gt;</a> 16-Aug-2011 08:56    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="teoria%20da%20computacao/">teoria da computacao/</a>   10-Apr-2015 14:17    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="teoria%20dos%20grafos/">teoria dos grafos/</a>      01-Aug-2014 08:17    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="tools/">tools/</a>                  24-Feb-2005 10:09    -   
+<hr></pre>
+<address>Apache/2.2.17 (Unix) mod_ssl/2.2.17 OpenSSL/0.9.8r DAV/2 PHP/5.3.6 SVN/1.6.16 Server at sol.facom.ufu.br Port 80</address>
+</body></html>
+
+****
+
+#1 - 2015-04-27 10:44:17.895117
+Iniciando requisição GET para URL "localhost:8000"...
+
+#2 - 2015-04-27 10:44:17.895739
+Parsing URL...
+
+#3 - 2015-04-27 10:44:17.896220
+Obtendo Host IP e numero da porta para conexao...
+
+#4 - 2015-04-27 10:44:17.911636
+	::IP para host "localhost" = 127.0.0.1!
+
+#5 - 2015-04-27 10:44:17.912036
+	::Porta da conexao = 8000!
+
+#6 - 2015-04-27 10:44:17.912333
+Criando socket TCP...
+
+#7 - 2015-04-27 10:44:17.912755
+	::Socket criado com sucesso!
+
+#8 - 2015-04-27 10:44:17.913080
+Iniciando conexao...
+
+#9 - 2015-04-27 10:44:17.914757
+	::Conexao iniciada em IP "127.0.0.1" e Porta "8000"!
+
+#10 - 2015-04-27 10:44:17.915134
+Montando mensagem GET...
+
+#11 - 2015-04-27 10:44:17.915534
+	::MENSAGEM GET
+****
+GET / HTTP/1.0
+
+Host: localhost:8000
+
+Connection: keep-alive
+****
+
+#12 - 2015-04-27 10:44:17.915835
+Enviando mensagem via socket...
+
+#13 - 2015-04-27 10:44:17.916276
+	::Mensagem enviada com sucesso!
+
+#14 - 2015-04-27 10:44:17.916594
+Recebendo mensagem do servidor...
+
+#15 - 2015-04-27 10:44:17.921039
+	::Mensagem recebida com sucesso de Host "127.0.0.1" Porta "8000"!
+
+#16 - 2015-04-27 10:44:17.921491
+	::MENSAGEM RECEBIDA
+
+****
+HTTP/1.0 200 OK
+
+Date: Mon, 27 Apr 2015 13:44:00 GMT
+
+Content-Length: 2260
+
+Content-Type: text/html; charset=UTF-8
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina inicial do servidor</title>
+	<!--link href="style.css" rel="stylesheet" type="text/css" /-->
+	<meta charset="utf-8" />
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		div#conteudo 
+		{
+			background-color: #ccc;
+			margin: 0px auto;
+			width:860px;
+			padding:10px;
+			border-radius: 10px;
+		}
+
+		nav
+		{
+			background-color:gray;
+			margin:-10px;
+		}
+
+		nav ul a li{
+			display:inline-block;
+			padding: 10px;
+			color:black;
+			text-decoration: none;
+		}
+
+		section#secao
+		{
+			background-color:gray;
+			border-radius:5px;
+		}
+
+		section#secao header
+		{
+			border-radius:5px;
+			text-align: center;
+		}
+
+		section#secao div
+		{
+			margin: 10px;
+		}
+
+		section#secao header h1
+		{
+			padding:10px;
+		}
+
+		article
+		{
+			margin:10px;
+			background-color:white;
+			border-radius:5px;
+			padding:10px;
+		}
+
+		article h2
+		{
+			text-align:center;
+		}
+
+
+		footer
+		{
+			clear: both;
+			background-color:gray;
+			border-radius:5px;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		//fim do css
+	</style>
+</head>
+<body>
+	<div id="conteudo">
+		<header>
+			<h1>Bem vindo ao SERVIDOR PARA PRATICA SD</h1>
+		</header>
+		<nav>
+			<ul>
+				<a href=""><li> Home 	</li></a>
+				<a href=""><li> PAGINAS </li></a>
+				<a href=""><li> Sobre	</li></a>
+			</ul>
+		</nav>
+		<section id="secao">
+			<header>
+				<h1>Esta e a pagina de entrada ao servidor</h1>
+			</header>
+			<article>
+				<h2>Lorem ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae eros eros. Pellentesque viverra dolor neque, vitae aliquet magna tempor eget. Curabitur eget turpis lectus. Pellentesque at risus sit amet magna vulputate feugiat. Praesent fringilla ante vitae massa aliquet, ac cursus lectus eleifend. Donec viverra ante sed nibh dictum, at viverra ipsum lacinia. Nunc fringilla, metus ac eleifend fringilla, odio nibh condimentum nulla, non semper felis nunc sed leo. Nulla finibus dignissim orci quis consequat. Morbi venenatis libero a arcu convallis semper. Sed vel dolor fringilla, sodales nisi nec, lacinia urna.</p>
+			</article>
+		</section>
+		
+		<footer>
+			<p>Copyright &copy; 2015
+		</footer>
+	</div>
+</body>
+</html>
+
+****
+
